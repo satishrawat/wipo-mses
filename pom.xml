@@ -60,6 +60,15 @@
           <reportsDirectory>${project.build.directory}/surefire-reports</reportsDirectory>
         </configuration>
       </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version> <!-- Adjust version if needed -->
+        <configuration>
+        <source>11</source> <!-- Java version source compatibility -->
+        <target>11</target> <!-- Java version target compatibility -->
+        </configuration>
+      </plugin>
     </plugins>
   </build>
 </project>
